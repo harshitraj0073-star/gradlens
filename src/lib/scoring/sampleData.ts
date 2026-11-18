@@ -1,7 +1,7 @@
 import { EngineInput } from './engine';
 
 export function getDefaultFirstYearCohortInput(): EngineInput {
-  const nowSec = Math.floor(Date.now() / 1000);
+  const nowSec = 1795000000;
   const daySec = 86400;
 
   // Generate realistic 16-week Codeforces submission history for a 1st-year CSE student (64 problems solved)

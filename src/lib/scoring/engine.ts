@@ -225,7 +225,7 @@ const CURATED_INTERNSHIP_CORPUS = [
 ];
 
 export function computeGradLensReport(input: EngineInput): GradLensReport {
-  const nowSec = Math.floor(Date.now() / 1000);
+  const nowSec = 1795000000;
   const window16wSec = 16 * 7 * 86400;
   const start16wSec = nowSec - window16wSec;
 
@@ -871,7 +871,7 @@ export function computeGradLensReport(input: EngineInput): GradLensReport {
   return {
     profile: {
       ...input.profile,
-      syncedAt: new Date().toISOString(),
+      syncedAt: '2026-11-18T00:00:00.000Z',
     },
     overallDnaScore,
     confidenceBand,
