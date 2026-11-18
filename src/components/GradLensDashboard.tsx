@@ -875,7 +875,7 @@ export default function GradLensDashboard() {
               </div>
 
               <div className="mt-6 h-80 w-full">
-                <ResponsiveContainer width="100%" height="100%">
+                <ResponsiveContainer width="100%" height={320}>
                   <ComposedChart data={report.weeklySeries}>
                     <CartesianGrid stroke="#1e293b" strokeDasharray="3 3" />
                     <XAxis dataKey="weekLabel" tick={{ fill: '#94a3b8', fontSize: 11 }} />
