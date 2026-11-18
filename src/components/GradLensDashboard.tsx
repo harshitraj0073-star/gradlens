@@ -651,7 +651,7 @@ export default function GradLensDashboard() {
                   </span>
                 </div>
                 <div className="mt-4 h-72 w-full">
-                  <ResponsiveContainer width="100%" height="100%">
+                  <ResponsiveContainer width="100%" height={288}>
                     <RadarChart
                       data={report.dimensions.map((d) => ({
                         subject: d.shortLabel,
@@ -709,7 +709,7 @@ export default function GradLensDashboard() {
                   </div>
                 </div>
                 <div className="mt-4 h-72 w-full">
-                  <ResponsiveContainer width="100%" height="100%">
+                  <ResponsiveContainer width="100%" height={288}>
                     <ComposedChart data={report.weeklySeries}>
                       <CartesianGrid stroke="#1e293b" strokeDasharray="3 3" />
                       <XAxis
