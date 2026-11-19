@@ -1,5 +1,11 @@
-import GradLensDashboard from '@/components/GradLensDashboard';
+'use client';
+
+import { SpatialApp } from '@/spatial/components/SpatialApp';
+import { computeGradLensReport } from '@/lib/scoring/engine';
+import { getDefaultFirstYearCohortInput } from '@/lib/scoring/sampleData';
 
 export default function HomePage() {
-  return <GradLensDashboard />;
+  const initialReport = computeGradLensReport(getDefaultFirstYearCohortInput());
+  
+  return <SpatialApp initialReport={initialReport} />;
 }
